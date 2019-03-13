@@ -43,7 +43,6 @@ describe('Card', () => {
     const tree = renderer
       .create(<Card key={props.id}{...props}/>)
       .toJSON();
-
     expect(tree).toMatchSnapshot();
   });
 });

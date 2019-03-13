@@ -7,7 +7,7 @@ import '../../../public/bundles/main.css';
 
 import mdInfo from './GithubUserSearch.md';
 
-import Card from './Card.js';
+import Card from './card/Card.js';
 import {action} from '@storybook/addon-actions';
 
 const stories = storiesOf('GitHub User Search', module);

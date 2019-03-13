@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CardList from './CardList.js';
-import GitHubForm from './GitHubForm.js';
-import Toaster from './Toaster.js';
+import CardList from './cardList/CardList.js';
+import GitHubForm from './formulary/GitHubForm.js';
+import Toaster from './toaster/Toaster.js';
 
 class GithubUserSearch extends React.Component {
 

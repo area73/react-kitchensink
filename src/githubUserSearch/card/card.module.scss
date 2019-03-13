@@ -5,17 +5,17 @@
   grid-template-columns: 75px auto;
   grid-column-gap: 10px;
   border: 1px solid #afafaf;
-  &_thumb {
+  .thumb {
     width: 75px;
     height: 75px;
     background-color: #555555;
   }
 
-  &__info {
+  .info {
     // margin: 6px 6px 12px 6px;
   }
 
-  &__substract {
+  .subtract {
     float:right;
     padding: 3px;
     border: 1px solid #999;
@@ -33,12 +33,13 @@
 
   }
 
-  &__name {
+  .name {
     font-size: 1.25rem;
     font-weight: bold;
   }
 
-  &__company {
+  .company {
+    font-style: italic;
   }
 }
 

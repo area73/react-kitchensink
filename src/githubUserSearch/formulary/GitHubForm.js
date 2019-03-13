@@ -1,5 +1,7 @@
 import React from 'react';
 
+import stylesForm from './github-form.module.scss';
+
 class GitHubForm extends React.Component {
 
   state = {
@@ -24,7 +26,7 @@ class GitHubForm extends React.Component {
 
   render() {
     return (
-      <div className="github-form">
+      <div className={stylesForm['github-form']}>
         <form onSubmit={this.handleSubmit}>
           <input type="text"
             value={this.state.userName}
