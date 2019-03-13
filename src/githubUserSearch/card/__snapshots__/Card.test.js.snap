@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+<div
+  className="card"
+>
+  <img
+    className="thumb"
+    src="https://avatars1.githubusercontent.com/u/2030605?v=4"
+  />
+  <div
+    className="info"
+  >
+    <div
+      className="subtract"
+    >
+      <a
+        href=""
+        onClick={[Function]}
+      >
+        X
+      </a>
+    </div>
+    <div
+      className="name"
+    >
+      Rodrigo
+    </div>
+    <div
+      className="company"
+    >
+      Area 73
+    </div>
+  </div>
+</div>
+`;
