@@ -55,10 +55,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "test": "node scripts/test.js",
+    "eslint": "eslint \"src/**/*.js\"",
+    "format": "prettier-eslint \"src/**/*.js\" \"src/**/*.scss\" --write"
   },
   "browserslist": [
     ">0.2%",
@@ -117,6 +116,8 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^1.5.0"
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "prettier-eslint-cli": "^4.7.1",
+    "react-test-renderer": "^16.8.4"
   }
 }
