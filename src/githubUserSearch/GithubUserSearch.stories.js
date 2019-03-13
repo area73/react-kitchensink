@@ -3,6 +3,8 @@ import {storiesOf} from '@storybook/react';
 import GithubUserSearch from './GithubUserSearch.js';
 import {text, number} from '@storybook/addon-knobs';
 
+import globalStyles from '../styles/main.scss';
+
 
 import mdInfo from './GithubUserSearch.md';
 
