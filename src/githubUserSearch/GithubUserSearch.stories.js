@@ -2,8 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import GithubUserSearch from './GithubUserSearch.js';
 import {text, number} from '@storybook/addon-knobs';
-// TODO fix CSS
-import '../../../public/bundles/main.css';
+
 
 import mdInfo from './GithubUserSearch.md';
 
