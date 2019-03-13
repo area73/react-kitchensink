@@ -3,6 +3,7 @@ import {storiesOf} from '@storybook/react';
 import GithubUserSearch from './GithubUserSearch.js';
 import {text, number} from '@storybook/addon-knobs';
 
+// eslint-disable-next-line no-unused-vars
 import globalStyles from '../styles/main.scss';
 
 
