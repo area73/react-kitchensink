@@ -27,7 +27,7 @@ exports[`CardList renders correctly 1`] = `
     className="toaster"
   >
     <span
-      className="error  hide"
+      className="error hide"
     />
   </div>
   <div
