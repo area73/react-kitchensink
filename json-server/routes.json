@@ -1,0 +1,5 @@
+{
+  "/users/:userName": "/user",
+  "/users/:userName/followers": "/followers",
+  "/users/:userName/following": "/following"
+}

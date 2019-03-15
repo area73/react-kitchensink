@@ -9,6 +9,7 @@ exports[`CardList renders correctly 1`] = `
     className="card"
   >
     <img
+      alt=""
       className="thumb"
       src="https://avatars1.githubusercontent.com/u/2030605?v=4"
     />
@@ -36,11 +37,20 @@ exports[`CardList renders correctly 1`] = `
         Area 73
       </div>
     </div>
+    <div>
+      URL: 
+      https://github.com/area73
+    </div>
+    <div>
+      followers: 
+      https://api.github.com/users/area73/followers
+    </div>
   </div>
   <div
     className="card"
   >
     <img
+      alt=""
       className="thumb"
       src="https://avatars3.githubusercontent.com/u/100354?v=4"
     />
@@ -67,6 +77,14 @@ exports[`CardList renders correctly 1`] = `
       >
         jPOS.org
       </div>
+    </div>
+    <div>
+      URL: 
+      https://github.com/ar
+    </div>
+    <div>
+      followers: 
+      https://api.github.com/users/ar/followers
     </div>
   </div>
 </div>
