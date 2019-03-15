@@ -14,8 +14,7 @@ class FollowingFollowerApp extends React.Component {
     },
   };
 
-  changeInputVal = ev => this.setState({inputValue: ev.target.value});
-  setInputStatus = (/*ev*/) => this.setState({ready: false});
+  handleForm = ev => this.setState({inputValue: ev.target.value})
   setSearchStatus = (/*ev*/) => this.setState({ready: true});
 
   shouldComponentUpdate(nextProps, nextState /*nextContext*/) {
@@ -82,9 +81,9 @@ class FollowingFollowerApp extends React.Component {
         <input
           placeholder="type a user"
           onBlur={this.setSearchStatus}
-          onFocus={this.setInputStatus}
-          onChange={this.changeInputVal}
-          value={this.state.inputValue}/>
+          onChange={this.handleForm}
+          name="inputValue"
+        />
         {this.renderParse()}
 
       </div>
