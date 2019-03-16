@@ -1,13 +1,9 @@
 import React from 'react';
-import {storiesOf} from '@storybook/react';
-// eslint-disable-next-line no-unused-vars
-import globalStyles from '../styles/main.scss';
-import mdInfo from './FollowingFollowerApp.md';
-import FollowingFollowerApp from './FollowingFollowerApp';
-import GUsers from './gUsers/GUsers.js';
-import {object, text} from '@storybook/addon-knobs';
+import renderer from 'react-test-renderer';
+import GUsers from './GUsers.js';
 
-const userList = object('userList', [
+const userType = 'followers';
+const userList = [
   {
     'login': 'd-asensio',
     'id': 13970905,
@@ -88,25 +84,11 @@ const userList = object('userList', [
     'type': 'User',
     'site_admin': false,
   },
-]);
+];
 
-const stories = storiesOf('GitHub Following / Followers', module);
-
-stories.add('Application', () => (
-  <FollowingFollowerApp/>
-), {mdInfo});
-
-stories.add(
-  'A list of Followers',
-  () => (
-    <GUsers userType={text('userType', 'followers')} userList={userList}/>
-  ), {mdInfo});
-stories.add(
-  'A list of Following',
-  () => (
-    <GUsers userType={text('userType', 'following')} userList={userList}/>
-  ), {mdInfo});
-stories.add(
-  'A list of users',
-  () => <GUsers userType={text('userType', 'user')} userList={userList}/>, {mdInfo});
-
+describe('GUsers', () => {
+  it('renders correctly a list of users', () => {
+    const tree = renderer.create(<GUsers userType={userType} userList={userList}/>).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

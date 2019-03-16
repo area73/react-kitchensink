@@ -8,7 +8,7 @@ class FollowingFollowerApp extends React.Component {
     inputValue: '',
     ready: false,
     user: {
-      followers: [{a: 'a'}, {b: 'b'}],
+      followers: [],
       following: [],
       data: {},
     },
