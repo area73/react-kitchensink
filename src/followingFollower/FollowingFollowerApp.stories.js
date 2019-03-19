@@ -90,7 +90,7 @@ const userList = object('userList', [
   },
 ]);
 
-const stories = storiesOf('GitHub Following / Followers', module);
+const stories = storiesOf('GitHub FollowingFollowers', module);
 
 stories.add('Application', () => (
   <FollowingFollowerApp/>

@@ -1,0 +1,43 @@
+.avatar {
+  img {
+    width: 75px;
+    height: 75px;
+  }
+
+  &.user {
+    img {
+      border: 5px solid yellowgreen;
+    }
+  }
+
+  &.--rounded {
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &.--circle {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &.--square {
+    img {
+
+    }
+  }
+
+  &.--border {
+    img {
+      border: 5px solid #333;
+    }
+  }
+
+  &.--user {
+    img {
+      border-color: yellowgreen;
+    }
+  }
+
+}

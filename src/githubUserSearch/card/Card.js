@@ -1,6 +1,7 @@
 import React from 'react';
 
 import card from './card.module.scss';
+import GUser from '../../followingFollower/gUser/GUser.js';
 
 class Card extends React.Component {
 
@@ -13,7 +14,7 @@ class Card extends React.Component {
     const data = this.props;
     return (
       <div className={card.card}>
-        <img className={card.thumb} src={data.avatar_url} alt={data.gravatar_id}/>
+        <GUser userRef={{avatar_url:data.avatar_url}}/>
         <div className={card.info}>
           <div className={card.subtract}><a href="" onClick={this.removeEl(data.id)}>X</a></div>
           <div className={card.name}>{data.name}</div>

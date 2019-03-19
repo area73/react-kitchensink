@@ -1,16 +1,26 @@
 import React from 'react';
 
 import style from './GUser.module.scss';
+import PropTypes from 'prop-types';
 
-class GUser extends React.PureComponent {
 
-  render() {
-    return (
-      <div className={style[this.props.userType] || style.GUser}>
-        <img alt="user"  src={this.props.userRef && this.props.userRef.avatar_url}/>
-      </div>);
-  }
-
+function GUser({userRef, userType} = {userRef:{}, userType:'user'}) {
+  return (
+    <div className={style[userType] || style.GUser}>
+      <img alt="user" src={userRef.avatar_url}/>
+    </div>);
 }
+
+
+GUser.propTypes = {
+  /** Some description here */
+  userRef: PropTypes.object.isRequired,
+  /** This is use for Storybook documentation */
+  userType: PropTypes.string,
+};
+
+GUser.defaultProps = {
+  userType: 'user',
+};
 
 export default GUser;

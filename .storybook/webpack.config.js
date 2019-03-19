@@ -7,6 +7,7 @@
 // to "React Create App". This only has babel loader to load JavaScript.
 
 module.exports = {
+  devtool: 'eval-source-map',
   plugins: [
     // your custom plugins
   ],

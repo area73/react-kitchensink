@@ -8,11 +8,14 @@ exports[`CardList renders correctly 1`] = `
   <div
     className="card"
   >
-    <img
-      alt=""
-      className="thumb"
-      src="https://avatars1.githubusercontent.com/u/2030605?v=4"
-    />
+    <div
+      className="user"
+    >
+      <img
+        alt="user"
+        src="https://avatars1.githubusercontent.com/u/2030605?v=4"
+      />
+    </div>
     <div
       className="info"
     >
@@ -49,11 +52,14 @@ exports[`CardList renders correctly 1`] = `
   <div
     className="card"
   >
-    <img
-      alt=""
-      className="thumb"
-      src="https://avatars3.githubusercontent.com/u/100354?v=4"
-    />
+    <div
+      className="user"
+    >
+      <img
+        alt="user"
+        src="https://avatars3.githubusercontent.com/u/100354?v=4"
+      />
+    </div>
     <div
       className="info"
     >
